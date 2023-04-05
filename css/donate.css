@@ -1,0 +1,153 @@
+@import "varialable.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    margin: 100px auto;
+    padding: 56px 96px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    background-image: url("../img/herb.png");
+    background-position: center;
+    background-size: cover;
+    border: solid 1px #d1d1d1;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link, .amount, .gpay, .divider, .card, .card-term-cvv, .submit {
+    margin-top: 20px;
+}
+
+.link a {
+    color: #000;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.amount {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.gpay, .card input, .submit button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 418px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: var(--border-radius);
+}
+
+.gpay:hover {
+    background-color: #3C4043;
+    cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+}
+
+.divider:after, .divider:before {
+    content: ' ';
+    background: var(--gray);
+    width: 119px;
+    height: 1px;
+}
+
+.divider:before {
+    margin-right: 5px;
+}
+
+.divider:after {
+    margin-left: 5px;
+}
+
+.card div {
+    position: relative;
+}
+
+.card input {
+    border: solid 1px var(--gray);
+    outline: none;
+    font-size: 14px;
+    padding: 12px;
+    background-color: #fff;
+    text-align: left;
+    color: #000;
+}
+
+.card input:focus + span, .card input:valid + span {
+    display: block;
+}
+
+.card-number input:focus::placeholder {
+    display: none;
+}
+
+.card span {
+    position: absolute;
+    display: none;
+    padding: 5px;
+    background-color: #fff;
+    font-size: 12px;
+    top: -12px;
+    left: 10px;
+    color: var(--gray);
+}
+
+.card-term-cvv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-term-cvv input {
+    width: 195px;
+}
+
+.submit button {
+    border: none;
+    font-size: 16px;
+    background-color: #CCBDF2;
+}
+
+.submit button:hover {
+    background-color: #C7BCE4;
+    cursor: pointer;
+}
