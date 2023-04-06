@@ -1,4 +1,4 @@
-@import "varialable.css";
+@import "donate-variable.css";
 
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #F4F4F4;
+    background-color: var(--body-bg);
 }
 
 input:focus::-webkit-input-placeholder {
@@ -78,6 +78,16 @@ a {
     cursor: pointer;
 }
 
+.gpay img {
+    width: 50px;
+    margin: 0 5px 0 5px;
+}
+
+.gpay img:nth-child(2) {
+    background-color: #fff;
+    padding: 3px 2px;
+}
+
 .divider {
     display: flex;
     align-items: center;
@@ -144,10 +154,10 @@ a {
 .submit button {
     border: none;
     font-size: 16px;
-    background-color: #CCBDF2;
+    background-color: var(--violet);
 }
 
 .submit button:hover {
-    background-color: #C7BCE4;
+    background-color: var(--violet-hover);
     cursor: pointer;
 }
